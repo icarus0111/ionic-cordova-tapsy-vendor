@@ -1,0 +1,42 @@
+<app-loader class="loader1" *ngIf="showLoader"></app-loader>
+<ion-content fullscreen>
+    <div class="location-col">
+        <div class="google-map">
+            <div class="vendor-top">
+
+                <!-- Toggles in a List -->
+                <div class="avatar">
+                    <!-- <div class="avatar-img"></div> -->
+                    <img class="avatar-img" [src]="userImage" />
+                    <p>{{vendorname | titlecase}}</p>
+                </div>
+                <div class="toggle-right">
+                    <span>{{statusText}}</span>
+                    <ion-toggle slot="start" name="kiwi" color="success" checked="{{active}}" (click)="onChangeActiveState($event)"></ion-toggle>
+                </div>
+
+            </div>
+            <!-- <img src="../../assets/images/google-map.jpg" alt=""> -->
+            <div #mapElement id="map">
+            </div>
+
+
+            <div class="accept-col" *ngIf="isPushDataPresent()">
+                <div class="vertical-align-wrap2">
+                    <div class="vertical-align vertical-align--middle">
+                        <div class="content-col">
+                            <h3><span>New Job!</span> {{jobProposalData?.job_type}}</h3>
+                            <p *ngIf="jobProposalData.address">{{jobProposalData?.address.substring(0, 40)}}... <span> {{jobProposalData?.distance}}</span></p>
+                            <a class="accept-btn" (click)="onClickAccept(1)">ACCEPT</a>
+                            <a class="reject-btn" (click)="onClickAccept(0)">REJECT</a>
+                            <p>Please accept the Job within <span>00:{{time}}</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom tab -->
+            <app-bottom-tab></app-bottom-tab>
+        </div>
+    </div>
+</ion-content>

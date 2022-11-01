@@ -1,0 +1,38 @@
+.previous-icon svg {
+    float: left;
+    margin-right: 25px;
+    width: 10px;
+    margin-top: 0px;
+}
+
+.previous-icon h2 {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.booking-content{ width: 100%; padding: 0 25px;}
+.sub-category-top{ width: 100%; background: #fff;}
+.sub-category-top h2{ color: #222;}
+.booking-content h3{ font-size: 24px; font-weight: 700; color: #222;}
+::-webkit-input-placeholder { /* Edge */
+    color: #c6c6c6;
+    font-size: 14px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c6c6c6;
+    font-size: 14px;
+  }
+  
+  ::placeholder {
+    color: #c6c6c6;
+    font-size: 14px;
+  }
+  .booking-content h4{ font-size:24px; color: #000; font-weight: 700; margin: 30px 0;}
+  .btn1{ width:100%; height: 40px; background: #8c3bfa; text-align: center; margin-bottom: 20px; font-size: 14px; color: #fff !important; line-height: 40px; border-radius: 50px; display: block;}
+  .btn1 .fa{ margin-left: 10px;}
+  .btn2{ width:100%; height: 40px; border: 1px #8c3bfa solid; text-align: center; margin-bottom: 20px; font-size: 14px; color: #8c3bfa !important; line-height: 40px; border-radius: 50px; display: block;}
+  .btn2 .fa{ margin-left: 10px;}
+  .btn2:hover{ background: #8c3bfa; color: #fff !important;}
+  textarea:focus{ border-color: #8c3bfa; box-shadow: none;}

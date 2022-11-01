@@ -1,0 +1,87 @@
+.join-col{ width: 100%; padding:30px 25px; height: 100vh;}
+.top-logo{ width: 100%;}
+.top-logo img{ width: 120px;}
+.btn-col{ width: 100%;}
+.btn-col a.sole-btn{ width: 48%; height: 60px; line-height:60px; border: 2px #8c3bfa solid; text-align: center; border-radius: 5px; color:#8c3bfa; font-size: 14px; float: left;}
+.btn-col a.company-btn{ width: 48%; height: 60px; line-height:60px; background:#8c3bfa; text-align: center;  border-radius: 5px; color:#fff; font-size: 14px; float: right;}
+.join-col h2{ font-size: 24px; font-weight: 700; color: #222;}
+.join-col p{ font-size: 11px; color: #a8a8a8; font-style: italic; margin-top: 10px;}
+.join-col h6{ color: #333; margin-bottom: 20px;}
+.input-col{ width: calc(100% - 50px); border: 2px #e6e6e6 solid; height: 45px; border-radius: 5px; font-size: 14px; padding: 0 10px;}
+.input-col:focus{border:2px #8c3bfa solid !important; box-shadow:none !important;}
+.native-input:focus{ border:2px #8c3bfa solid !important; box-shadow:none !important;} 
+::-webkit-input-placeholder { /* Edge */
+    color: #c6c6c6;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c6c6c6;
+  }
+  
+  ::placeholder {
+    color: #c6c6c6;
+  }
+  .select{
+     width: 100%; 
+     height: 40px;
+    outline-style: none;
+    border: 2px solid #e6e6e6; 
+    border-radius: 5px;
+    padding: 0 10px;   
+  outline: none;
+  color: #c6c6c6;
+  }
+  select option { color: black; background: #fff;}
+select option:first-child{
+  color: #c6c6c6;
+}
+  .select:focus{border:2px #8c3bfa solid !important;}
+  .col1{ width: 35%; float: left; margin-right:4%;}
+  .col2{ width: 32%; float: left; margin-right:4%;}
+  .col3{ width: 25%; float: left;}
+  .processes-btn{
+     width:100%; height: 45px; border-radius: 40px; background: #8c3bfa; text-align: center; color: #fff; font-size: 14px; line-height: 45px; margin: 10px auto 0; display: block;
+     -webkit-box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    }
+
+  label{ font-size: 14px;}
+  .process-btn-col{ width: 100%; text-align: center; background: #fff; padding: 20px 0;} 
+  ion-item {
+    --border-color: var(--ion-color-danger, #8c3bfa);
+  }
+  .input-row{ width: 100%; position: relative;}
+  .country-code{ width: 60px; text-align: center; line-height: 40px; height: 41px; border-right: 1px rgba(0,0,0,0.1) solid; position: absolute; left: 0px; top: 2px;}
+.padding-left{ padding-left: 75px;}
+.add-button{ width: 40px; height: 45px; border-radius: 5px; background: #8c3bfa; float: right; border: none; text-align: center; line-height: 20px;}
+.add-button svg{ fill: #fff; width: 18px;}
+.join-col .number-col{ list-style: none; margin: 0; padding:0 20px; width: 100%; position: absolute; left: 0px; right: 0px; top: 250px; bottom:90px; overflow-y: scroll;}
+.join-col .number-col .number-list{ width: 100%; float: left; border-bottom: 1px rgba(0,0,0,0.1) solid; padding: 15px 0; font-size: 17px;}
+.join-col .number-col .number-list span{ float: right;}
+.join-col .number-col .number-list span a{ cursor: pointer;}
+.join-col .number-col .number-list span a:hover svg path{ fill: #8c3bfa;}
+.join-col h5{ font-size: 18px; color: #8c3bfa; margin: 30px 0 15px;}
+.add-button:hover{ background-color: #000;}
+.team-row{ width: 100%; height:80vh;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

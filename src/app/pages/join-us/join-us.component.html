@@ -1,0 +1,16 @@
+<app-loader class="loader1" *ngIf="showLoader"></app-loader>
+
+<ion-content>
+    <div class="join-col">
+        <div class="top-logo mb-4">
+            <img src="../../../assets/images/logo2.svg" alt="">
+        </div>
+        <h2 class="mb-3">Join Us</h2>
+        <p class="mb-5">Join our team and make a change in your career with our reliable, stressless system to make things easier ever.</p>
+        <h6 class="mb-3">I'm a</h6>
+        <div class="btn-col">
+            <a class="sole-btn" (click)="onChooseOption(0)">Sole Trader</a>
+            <a class="company-btn" (click)="onChooseOption(1)">Company</a>
+        </div>
+    </div>
+</ion-content>

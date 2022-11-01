@@ -1,0 +1,165 @@
+.register-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-top {
+    width: 100%;
+    padding: 0 0 0 25px;
+    background: #7a615b;
+}
+
+.register-left {
+    width: 60%;
+    float: left;
+    position: relative;
+    margin-top: 15%;
+}
+
+.register-right {
+    width: 40%;
+    float: right;
+}
+
+.previous-icon svg {
+    float: left;
+    margin-right: 20px;
+    width: 10px;
+    margin-top: 0px;
+}
+
+.register-left h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form {
+    width: 100%;
+    padding: 25px;
+}
+
+.item-select {
+    border-radius: 5px;
+    border: 1px #ccc solid !important;
+    box-shadow: none !important;
+    height: 45px;
+}
+
+.select-text {
+    margin-top: -4px !important;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.input:focus {
+    border-color: #8c3bfa;
+    outline: none;
+}
+
+.image-upload {
+    background: transparent;
+    border: none;
+}
+
+.image-upload {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.file {
+    width: 100%;
+    position: relative;
+    border: 1px #ccc solid;
+    height: 45px;
+    border-radius: 5px;
+    background: url(../../../assets/images/camera.png) no-repeat right center;
+}
+
+.file:focus {
+    border-color: #8c3bfa;
+    outline: none;
+}
+
+.form-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #222222;
+}
+
+.select-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #858585;
+    height: 23px;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #858585;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+ ::placeholder {
+    color: #858585;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.file span {
+    color: #858585;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height:45px;
+    padding-left: 15px;
+}
+
+.processed-btn {
+    -webkit-box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 80%;
+    height: 45px;
+    background: #8c3bfa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 25px auto 0;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.processed-btn .fa {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.select-icon {
+    margin-top: 5px !important;
+    padding-top: 5px !important;
+}

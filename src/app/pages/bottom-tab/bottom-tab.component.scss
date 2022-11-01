@@ -1,0 +1,18 @@
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.job-request-small-pop {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 70px;
+    z-index: 99999999999999;
+    text-align: center;
+}

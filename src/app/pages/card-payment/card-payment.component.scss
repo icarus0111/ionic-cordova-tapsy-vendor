@@ -1,0 +1,76 @@
+.previous-icon svg {
+  float: left;
+  margin-right: 25px;
+  width: 10px;
+  margin-top: 0px;
+}
+
+.previous-icon h2 {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; line-height: 24px;
+}
+.booking-content{ width: 100%; padding: 0 25px;}
+.sub-category-top{ width: 100%; background: #fff;}
+.sub-category-top h2{ color: #222;}
+.booking-content h3{ font-size: 26px; font-weight: 700; color: #222; margin-bottom: 10px; float: left;} 
+.booking-content h3 span{ float: right; color: #8c3bfa;}
+.booking-content h4{ font-size: 16px; margin: 0 0 50px; color: #858585;}
+.booking-content h5{ font-size: 16px; color: #858585;}
+.booking-content h6{ font-size: 16px; color: #222;}          
+::-webkit-input-placeholder { /* Edge */
+  color: #c6c6c6;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c6c6c6;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #c6c6c6;
+  font-size: 14px;
+}
+
+.btn1{ width:100%; height: 40px; background: #8c3bfa; text-align: center; margin-top: 25px; margin-bottom: 20px; -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21); font-size: 14px; color: #fff !important; line-height: 40px; border-radius: 50px; float: left;}
+.btn1 .fa{ margin-left: 10px;}
+.btn1:hover{ background: #8c3bfa; color: #fff !important;}
+.visa-card{ float: right;}
+.visa-card img{ height: 22px;}
+.payment-form{ width:100%; padding: 10px 25px;}
+.form-control{ margin-bottom: 10px; height:40px;}
+.form-control:focus{ border-color: #8c3bfa; box-shadow: none;}
+.expaire-date{ width:70%; float:left;}
+.cvv-number{ width: 25%; float: right;}
+.month{ width: 48%; float: left;}
+.year{ width: 48%; float: right;}
+.select{
+  width: 100%; 
+  height: 40px;
+ outline-style: none;
+ border: 1px solid #ced4da !important;  
+ border-radius: 5px;
+ padding:0;   
+outline: none;
+color: #c6c6c6;
+}
+select option { color: black; background: #fff;}
+select option:first-child{
+color: #c6c6c6;
+}
+.select:focus{border:1px #8c3bfa solid !important;}
+label{ font-size: 14px; width: 100%;} 
+.sc-ion-label-md-h{ margin-top: 0px !important; font-size: 14px !important; color: #c6c6c6 !important;}
+.in-item{ padding-top: 2px !important; margin-top: 2px !important; padding-left: 0px !important;}
+.select-text{ display: none !important;}
+.bottom-col{ width: 100%; font-size: 14px; color: #858585; float: left; margin-top: 20px; margin-bottom: 50px;}
+.bottom-col span{ float: right;}
+.toggle-checked{ padding-right: 0px !important;}
+.bottom-col p{ float: left; line-height: 33px;}
+.secure-col{ width: 100%; text-align: center; float: left; color: #858585; font-size: 14px; margin-bottom: 15px;}
+.secure-col img{ width:20px; margin-right: 10px;}
+.join-col{ width: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; overflow-y: scroll; height: 100vh;}

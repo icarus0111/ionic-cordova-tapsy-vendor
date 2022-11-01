@@ -1,0 +1,42 @@
+<ion-content>
+    <div class="join-col">
+        <div class="team-row">
+        <h2 class="mb-3">Add Team</h2>
+        <div class="form-group">
+            <label>Employee Phone Number</label>
+            <div class="input-row">
+                <form [formGroup]="vendorAddTeamForm" (ngSubmit)="onSubmitVendorAddTeamForm()">
+                    <span class="country-code">+61</span>
+                    <input type="tel" formControlName='phone' class="input-col padding-left">
+                    <button type="submit" class="add-button">
+                  <svg height="20pt" viewBox="0 0 448 448" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0" fill="#fff"/></svg>
+                </button>
+                </form>
+            </div>
+            <p>This number will be login ID of the employee. However employee need to complete his own profile after login to receive jobs.</p>
+            <h5>Added Employee</h5>
+
+            <div class="number-col">
+                <ion-list class="number-list" *ngFor="let emp of empList">+61 {{emp?.phone}}<span class="close-btn"><a href=""><svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 174.239 174.239" xml:space="preserve">
+                <g>
+                  <path d="M87.12,0C39.082,0,0,39.082,0,87.12s39.082,87.12,87.12,87.12s87.12-39.082,87.12-87.12S135.157,0,87.12,0z M87.12,159.305
+                    c-39.802,0-72.185-32.383-72.185-72.185S47.318,14.935,87.12,14.935s72.185,32.383,72.185,72.185S126.921,159.305,87.12,159.305z" fill="#ff0000"
+                    />
+                  <path d="M120.83,53.414c-2.917-2.917-7.647-2.917-10.559,0L87.12,76.568L63.969,53.414c-2.917-2.917-7.642-2.917-10.559,0
+                    s-2.917,7.642,0,10.559l23.151,23.153L53.409,110.28c-2.917,2.917-2.917,7.642,0,10.559c1.458,1.458,3.369,2.188,5.28,2.188
+                    c1.911,0,3.824-0.729,5.28-2.188L87.12,97.686l23.151,23.153c1.458,1.458,3.369,2.188,5.28,2.188c1.911,0,3.821-0.729,5.28-2.188
+                    c2.917-2.917,2.917-7.642,0-10.559L97.679,87.127l23.151-23.153C123.747,61.057,123.747,56.331,120.83,53.414z" fill="#ff0000" />
+                </g>
+                </svg></a></span>
+                </ion-list>
+            </div>
+
+        </div>
+       </div>
+
+        <div class="process-btn-col">
+            <button type="button" class="processes-btn" (click)="onClickProcess()">Proceed Next <i class="fa fa-angel left"></i></button>
+        </div>
+    </div>
+</ion-content>

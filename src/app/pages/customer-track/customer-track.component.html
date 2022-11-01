@@ -1,0 +1,89 @@
+<ion-content fullscreen>
+    <div class="location-col">
+        <div class="google-map">
+            <div class="vendor-top">
+
+                <!-- Toggles in a List -->
+                <div class="avatar">
+                    <!-- <div class="avatar-img"></div> -->
+                    <img class="avatar-img" [src]="userImage" />
+                    <p>{{vendorname | titlecase}}</p>
+                </div>
+
+                <div class="toggle-right">
+                    <!-- <span>ON</span> -->
+                    <!-- <ion-toggle slot="start" name="kiwi" color="success" checked></ion-toggle> -->
+                </div>
+
+                <div class="address-col">{{jobProposalData?.address}}</div>
+            </div>
+
+            <!-- <img src="../../assets/images/google-map.jpg" alt=""> -->
+            <div #mapElement id="map"></div>
+
+            <div class="accept-col">
+                <div class="content-col">
+                    <h3><span>Awesome</span> You started a new job.</h3>
+                    <div class="customer-info">
+                        <h2>{{jobProposalData?.cus_name}}</h2>
+                        <p>5 Jobs completed in the past</p>
+                    </div>
+                    <div class="button-col">
+
+
+
+                        <a class="reject-btn" (click)="onClickCallIcon()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" height="17">
+                            <defs>
+                              <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                <path d="M-538 -947L102 -947L102 189L-538 189Z" />
+                              </clipPath>
+                            </defs>
+                            <style>
+                              tspan { white-space:pre }
+                              .shp0 { fill: #ffffff } 
+                            </style>
+                            <g id="Dashboard – vendor on the way" clip-path="url(#cp1)">
+                              <path id="ic_local_phone_24px" class="shp0" d="M4.02 8.66C5.62 11.8 8.2 14.37 11.34 15.98L13.79 13.53C14.09 13.23 14.53 13.13 14.92 13.27C16.17 13.68 17.51 13.9 18.89 13.9C19.5 13.9 20 14.4 20 15.01L20 18.89C20 19.5 19.5 20 18.89 20C8.45 20 0 11.54 0 1.11C0 0.5 0.5 0 1.11 0L5 0C5.61 0 6.11 0.5 6.11 1.11C6.11 2.5 6.33 3.83 6.74 5.08C6.87 5.47 6.78 5.9 6.47 6.21L4.02 8.66Z" />
+                            </g>
+                          </svg>
+                        </a>
+
+
+
+                        <!-- <a class="accept-btn" (click)="onClickCarIcon()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 22" width="30" height="14">
+                            <defs>
+                              <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                <path d="M-444 -945L196 -945L196 191L-444 191Z" />
+                              </clipPath>
+                            </defs>
+                            <style>
+                              tspan { white-space:pre }
+                              .shp0 { fill: #ffffff } 
+                            </style>
+                            <g id="Dashboard – vendor on the way" clip-path="url(#cp1)">
+                              <g id="car">
+                                <path id="Path 1757" class="shp0" d="M36.62 13.89C38.67 13.89 40.33 15.55 40.33 17.6C40.33 19.65 38.67 21.31 36.62 21.31C34.57 21.31 32.91 19.65 32.91 17.6C32.91 15.55 34.57 13.89 36.62 13.89Z" />
+                                <path id="Path 1758" class="shp0" d="M34.74 5.04L36.96 7.29L23.72 7.29L23.72 0.07C27.88 0.32 31.8 2.09 34.74 5.04Z" />
+                                <path id="Path 1759" class="shp0" d="M13.24 6.88L13.24 1.54C15.43 0.54 17.81 0.02 20.21 0L22.49 0L22.49 7.29L13.7 7.29C13.46 7.3 13.26 7.12 13.24 6.88Z" />
+                                <path id="Path 1760" class="shp0" d="M9.89 13.89C11.95 13.89 13.61 15.55 13.61 17.6C13.61 19.65 11.95 21.31 9.89 21.31C7.84 21.31 6.18 19.65 6.18 17.6C6.18 15.55 7.84 13.89 9.89 13.89Z" />
+                                <path id="Path 1761" class="shp0" d="M4.67 10.58C4.66 9.44 3.74 8.52 2.6 8.52L0.18 8.52C0.55 7.59 1.46 6.97 2.46 6.98L6.31 6.98C6.51 6.97 6.68 6.88 6.79 6.72C8.2 4.85 9.97 3.3 12.01 2.16L12.01 6.88C12.02 7.8 12.78 8.53 13.7 8.52L38.42 8.52L42 8.77C44.25 8.92 46 10.79 46 13.04L46 17.35L41.56 17.35C41.43 14.79 39.27 12.65 36.62 12.65C33.97 12.65 31.81 14.79 31.68 17.35L14.83 17.35C14.71 14.79 12.54 12.65 9.89 12.65C7.25 12.65 5.08 14.79 4.95 17.35L1.48 17.35C0.67 17.35 0 16.69 0 15.88L0 12.63L2.6 12.63C3.74 12.63 4.66 11.71 4.67 10.58L4.67 10.58Z" />
+                                <path id="Path 1762" class="shp0" d="M3.43 10.58C3.43 10.79 3.35 11 3.19 11.16C3.03 11.31 2.82 11.4 2.6 11.4L0 11.4L0 9.75L2.6 9.75C2.82 9.75 3.03 9.84 3.19 9.99C3.35 10.15 3.43 10.36 3.43 10.58Z" />
+                              </g>
+                            </g>
+                          </svg>
+                        </a> -->
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom tab -->
+            <app-bottom-tab></app-bottom-tab>
+        </div>
+    </div>
+</ion-content>

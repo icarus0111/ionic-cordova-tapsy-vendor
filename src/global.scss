@@ -1,0 +1,346 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.searchbar-input {
+    border-radius: 50px !important;
+    background: #eff2f5 !important;
+}
+
+.bottom-tab {
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    z-index: 9999;
+    background: #ffff;
+    left: 0;
+    right: 0px;
+    padding: 10px 0;
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-tab ul.tab-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.bottom-tab ul.tab-list li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bottom-tab ul.tab-list li a {
+    color: #4e4e4e;
+    font-weight: 700;
+}
+
+.bottom-tab ul.tab-list li.active a {
+    color: #222;
+}
+
+.bottom-tab ul.tab-list li.active a svg path {
+    fill: #8c3bfa;
+}
+
+.bottom-tab ul.tab-list li p {
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.bottom-tab ul.tab-list li svg {
+    width: 22px;
+}
+
+.bottom-tab ul.tab-list li:nth-child(2) svg {
+    width: 15px;
+}
+
+.bottom-tab ul.tab-list li:nth-child(3) svg {
+    width: 18px;
+}
+
+.bottom-tab ul.tab-list li:nth-child(4) svg {
+    width: 16px;
+}
+
+.subcategory-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sub-category-top {
+    width: 100%;
+    padding: 52px 25px 20px;
+    background: #8c3bfa;
+    position: relative;
+}
+
+ul.top-tab-list {
+    list-style: none;
+    margin: 20px 0 0;
+    display: flex;
+    padding: 0 25px 0;
+    width: 100%;
+    text-align: left;
+    height: 40px;
+}
+
+ul.top-tab-list li {
+    flex: 1 0 120px;
+    color: #8d8d8d;
+    text-align: left;
+}
+
+ul.top-tab-list li a {
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+ul.top-tab-list li a:hover {
+    border-bottom: 3px #8c3bfa solid;
+    padding-bottom: 10px;
+}
+
+ul.top-tab-list li a:focus {
+    border-bottom: 3px #8c3bfa solid;
+    padding-bottom: 10px;
+}
+
+ul.top-tab-list li.active a {
+    border-bottom: 3px #8c3bfa solid;
+    padding-bottom: 10px;
+}
+
+.search {
+    outline: none;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+.search::-webkit-search-decoration,
+.search::-webkit-search-cancel-button {
+    display: none;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input[type=search] {
+    background: #ededed url(assets/images/expand-search.jpg) no-repeat left center;
+    border: solid 0px #ccc;
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    -webkit-border-radius: 20em;
+    -moz-border-radius: 20em;
+    border-radius: 20em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 250px;
+    background-color: #fff;
+    border-color: #8c3bfa;
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+.searchfocus {
+    outline: none;
+}
+
+.search:-moz-placeholder {
+    color: #999;
+}
+
+.search::-webkit-.search-placeholder {
+    color: #999;
+}
+
+
+/* Demo 2 */
+
+#expand-search input[type=search] {
+    width: 45px;
+    padding-left: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+#expand-search input[type=search]:hover {
+    background-color: #fff;
+}
+
+#expand-search input[type=search]:focus {
+    width: 250px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+
+#expand-search .search:-moz-placeholder {
+    color: transparent;
+}
+
+#expand-search .search::-webkit-.search-placeholder {
+    color: transparent;
+}
+
+// .okBtn {
+//     border: 1px solid #4e4e4e !important;
+// }
+ion-item {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.loader1 {
+    z-index: 99999999999999999999999999999 !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.ngb-dp-day,
+.ngb-dp-week-number,
+.ngb-dp-weekday {
+    width: 14.28% !important;
+    height: 3rem !important;
+}
+
+.btn-link {
+    color: #7312f8 !important;
+}
+
+.ngb-dp-weekday {
+    color: #7312f8 !important;
+}
+
+.text-white {
+    background-color: #7312f8 !important;
+}
+
+.ngb-dp-month {
+    width: 100% !important;
+}
+
+.ngb-dp-header {
+    background-color: none !important;
+    background: none !important;
+}
+
+.ngb-dp-weekdays,
+.ngb-dp-month-name {
+    background: none !important;
+    // background: #f8f9fa;
+    // background-color: var(--light);
+}
+
+ngb-datepicker {
+    // border: 1px solid #dfdfdf;
+    border-top: none !important;
+    // border-radius: .25rem;
+    display: block !important;
+}
+
+[ngbDatepickerDayView] {
+    border-radius: 50% !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+
+.ngb-dp-today>div {
+    padding-top: 4px !important;
+    // padding-left: 5px !important;
+}
+
+.ngb-dp-day>div {
+    padding-top: 4px !important;
+    // padding-left: 5px !important;
+}
+
+.ngb-dp-today {
+    padding-top: 4px !important;
+    padding-left: 5px !important;
+}
+
+.ngb-dp-week-number,
+.ngb-dp-weekday {
+    line-height: 4rem !important;
+}
+
+.ngb-dp-day {
+    // cursor: pointer;
+    padding-left: 4px !important;
+}

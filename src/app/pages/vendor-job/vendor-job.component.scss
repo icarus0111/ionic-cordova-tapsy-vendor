@@ -1,0 +1,288 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.location-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.google-map {
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+}
+
+.location-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 30vh;
+    background: #fff;
+    z-index: 9999;
+    padding: 25px 25px 0;
+}
+
+.location-row {
+    width: 82%;
+    float: left;
+    position: relative;
+}
+
+.location-input {
+    width: 100%;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px #ccc solid;
+    height: 45px;
+    padding: 0 40px 0 20px;
+}
+
+.location-input:focus {
+    border-color: #8c3bfa;
+    outline: none;
+}
+
+.location-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 20px;
+}
+
+.location-icon img {
+    width: 18px;
+}
+
+.google-map {
+    width: 100%;
+}
+
+.google-map img {
+    width: 100%;
+}
+
+.location-info h2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #222222;
+}
+
+.location-info p {
+    font-size: 12px;
+    color: #858585;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.location-search-btn {
+    width: 45px;
+    height: 45px;
+    background: #8c3bfa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    float: right;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.location-search-btn:hover {
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.47);
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.47);
+    background: #7b2ce6;
+}
+
+.location-search-btn:focus {
+    outline: none;
+    background: #7b2ce6;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #858585;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+ ::placeholder {
+    color: #858585;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.vendor-top {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 20px 0;
+    float: left;
+}
+
+.avatar {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.avatar .avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+}
+
+.avatar .avatar-img img {
+    width: 100%;
+}
+
+.toggle-right {
+    float: right;
+}
+
+.avatar p {
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.toggle-right span {
+    float: left;
+    font-size: 15px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+
+.toggle-checked {
+    padding-right: 0px !important;
+}
+
+.accept-col {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 0 20px 0;
+    position: absolute;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.47);
+    z-index: 9999999999;
+}
+
+.vertical-align-wrap2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding: 0 40px;
+}
+
+.vertical-align {
+    display: table-cell;
+}
+
+.vertical-align--middle {
+    vertical-align: middle;
+}
+
+.content-col {
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+    float: left;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.21);
+}
+
+.accept-btn {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff !important;
+    line-height: 35px;
+    border-radius: 5px;
+    background: #5eae22;
+    margin-right: 15px;
+    float: none;
+    display: inline-block;
+}
+
+.accept-btn:hover {
+    background: #222;
+}
+
+.reject-btn {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff !important;
+    line-height: 35px;
+    border-radius: 5px;
+    background: #ff5439;
+    float: none;
+    display: inline-block;
+}
+
+.reject-btn:hover {
+    background: #222;
+}
+
+.content-col h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.content-col h3 span {
+    color: #5eae22;
+}
+
+.content-col p {
+    font-size: 12px;
+    color: #8f8d8d;
+    margin-bottom: 10px;
+}
+
+.content-col p span {
+    color: #8c3bfa;
+    margin-left: 20px;
+}
+
+
+/* Optional: Makes the sample page fill the window. */

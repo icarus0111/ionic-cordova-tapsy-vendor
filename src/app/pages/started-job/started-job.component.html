@@ -1,0 +1,15 @@
+<app-loader class="loader1" *ngIf="showLoader"></app-loader>
+<ion-content fullscreen>
+    <section class="start-job-col">
+        <div class="vertical-align-wrap2">
+            <div class="vertical-align vertical-align--middle">
+                <img src="../../../assets/images/clock.png" alt="">
+                <h3>You started the job</h3>
+                <p>Once you finish the job, Please <br> click the finish button below.</p>
+            </div>
+        </div>
+        <div class="finishbtn-col">
+            <a class="finish-btn" (click)="getPayment()">Finish the job <i class="fa fa-angle-right"></i></a>
+        </div>
+    </section>
+</ion-content>

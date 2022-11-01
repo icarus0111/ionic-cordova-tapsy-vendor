@@ -1,0 +1,19 @@
+.onborad-col{ width: 100%; height: 100vh; padding: 40px 25px; position: relative; font-family: 'Montserrat', sans-serif !important;}
+.top-logo img{ height:30px;}
+.profile-btn{ width: 88%; height: 45px; font-weight: 500; line-height: 45px; text-align: center; font-size: 14px; color: #fff !important; background: #8c3bfa; border-radius: 50px; position: absolute; bottom: 40px; left: 6%;}
+.profile-btn .fa{ margin-left: 10px;}
+.onborad-col h2{ font-size: 26px; font-weight: 800;}
+.top-logo{ width: 100%; margin-bottom:30px;}
+.onborad-col p{ font-size: 14px; color: #858585;}
+.onborad-col p span{ color: #8c3bfa;}
+@supports (-webkit-overflow-scrolling: touch) {
+    .profile-btn{ height: 50px; line-height: 5px;}
+}
+
+
+
+
+
+
+
+

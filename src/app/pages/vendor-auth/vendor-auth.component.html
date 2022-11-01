@@ -1,0 +1,20 @@
+<ion-content>
+    <div class="join-col">
+        <form [formGroup]="vendorAuthForm" (ngSubmit)="onSubmitVendorAuthForm()">
+            <div class="vendor-auth-col">
+            <h2 class="mb-3">Authentication</h2>
+            <div class="form-group">
+                <label>Business Name</label>
+                <input type="text" formControlName='businessName' class="input-col" placeholder="Your preferred name">
+            </div>
+            <div class="form-group">
+                <label>Australian Business Number</label>
+                <input type="text" formControlName='abn' class="input-col" placeholder="ABN number">
+            </div>
+        </div>
+            <div class="process-btn-col">
+                <button type="submit" class="processes-btn">Proceed Next <i class="fa fa-angel left"></i></button>
+            </div>
+        </form>
+    </div>
+</ion-content>

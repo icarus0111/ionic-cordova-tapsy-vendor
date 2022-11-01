@@ -1,0 +1,23 @@
+.start-job-col{ width: 100%; position: absolute; top: 0px; bottom: 0px; height: 100vh; left: 0px; right: 0px; background: #8c3bfa; text-align: center;}
+.vertical-align-wrap2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.vertical-align {
+    display: table-cell;
+}
+
+.vertical-align--middle {
+    vertical-align: middle;
+}
+.finishbtn-col{ width:100%; padding:0 60px; position: fixed; bottom: 50px; left: 0px; right: 0px;}
+.finishbtn-col .finish-btn{ width: 100%; height: 45px; font-size: 14px; color: #8c3bfa; text-align: center; line-height: 45px; border-radius: 50px; background: #fff; display: block; cursor: pointer;}
+.finishbtn-col .finish-btn .fa{ margin-left: 10px;}
+.start-job-col h3{ font-size: 16px; font-weight: 700; margin: 20px 0; color: #fff; letter-spacing: 1px;}
+.start-job-col p{ font-size: 14px; color: #fff; line-height: 18px;}
+
